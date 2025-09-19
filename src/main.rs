@@ -45,7 +45,7 @@ fn main() {
     let parser = MarkdownParser::new_ext(&mardown_input, options);
 
     let mut html_output = String::new();
-    html::push_html(&mut html_output, parser);//get the html output
+    html::push_html(&mut html_output, parser);  //get the html output
 
     let full_html_output = render_html_page(&html_output).into_string();
 
